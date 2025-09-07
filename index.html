@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ojas' Multi-List To-Do</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>📂 My Lists</h2>
+      <ul id="listContainer"></ul>
+      <input type="text" id="newListInput" placeholder="New List Name">
+      <button onclick="addList()">+ Add List</button>
+    </aside>
+
+    <!-- Main To-Do App -->
+    <main class="app">
+      <h1 id="currentListTitle">📝 Select a List</h1>
+      <div class="input-container">
+        <input type="text" id="taskInput" placeholder="Enter a new task...">
+        <button onclick="addTask()">Add</button>
+        <button onclick="toggleDarkMode()" class="dark-toggle">🌙</button>
+      </div>
+      <ul id="taskList"></ul>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
